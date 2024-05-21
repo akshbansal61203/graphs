@@ -21,9 +21,9 @@ class Solution
             for(auto it:adj[node]){
                 int v=it[0];
                 int wt=it[1];
-                if(d+wt < dist[it]){
+                if(d+wt < dist[v]){
                     dist[it]=d+wt;
-                    pq.push({dist[it],v});
+                    pq.push({dist[v],v});
                 }
             }
         }
